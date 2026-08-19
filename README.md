@@ -506,26 +506,10 @@ The highest-ranked documents are then provided to the language model.
 
 ---
 
-## Advantages
-
-- Combines semantic and keyword retrieval
-- Uses FAISS for efficient vector search
-- Uses BM25 for keyword matching
-- Uses MMR to reduce redundant results
-- Uses Cross-Encoder reranking
-- Supports conversational follow-up questions
-- Provides source information
-- Uses a Hugging Face language model
-- Provides a Streamlit user interface
-- Can be adapted to different PDF documents
-
----
 
 ## Author
 
 **Vivek Makwana**
-
-GitHub: https://github.com/V-Mak
 
 LinkedIn: https://www.linkedin.com/in/vivek-makwana-2a7796243
 
