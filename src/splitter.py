@@ -1,0 +1,14 @@
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from src.loader import load_pdf
+
+
+def split_documents(documents):
+
+    text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=1000,
+        chunk_overlap=150,
+        separators=["\n\n", "\n", ". ", " ", ""])
+
+    chunks = text_splitter.split_documents(documents)
+
+    return chunks
